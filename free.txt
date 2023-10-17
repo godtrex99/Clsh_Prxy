@@ -1,0 +1,33 @@
+proxies:
+  - name: "[ID] 3d"
+    server: bug.com
+    port: 443
+    type: vmess
+    uuid: 5ad8ce24-754d-42f6-aa2c-000408c47631
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: graph.whatsapp.com
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: id1.createv2ray.com
+    udp: true
+  - name: "[SG] 3d"
+    server: bug.com
+    port: 443
+    type: vmess
+    uuid: 63860471-bf65-4810-88d9-3e02e6d69348
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: graph.whatsapp.com
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg4.createv2ray.com
+    udp: true
